@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/ucj1oml.css">
+</head>
+<body>
+    <div id="intro-screen">
+    <h1 class="intro-title">Portfolio</h1>
+    <p id="typing-subtitle" class="intro-subtitle"></p>
+</div>
+    
+    <div class="container">
+        <header>
+            <h1>Portfolio</h1>
+        </header>
+
+        <nav class="bottom-nav">
+            <div class="nav-container">
+                <ul class="menu">
+                    <li class="item active" data-section="accueil">
+                        <a href="#accueil">
+                            <i class="fas fa-home icon"></i>
+                            <span class="nav-text">Accueil</span>
+                        </a>
+                    </li>
+                    <li class="item" data-section="projets">
+                        <a href="#projets">
+                            <i class="fas fa-folder-open icon"></i>
+                            <span class="nav-text">Projets</span>
+                        </a>
+                    </li>
+                    <li class="item" data-section="qui-suis-je">
+                        <a href="#qui-suis-je">
+                            <i class="fas fa-user icon"></i>
+                            <span class="nav-text">Qui suis-je ?</span>
+                        </a>
+                    </li>
+                    <li class="item" data-section="contact">
+                        <a href="#contact">
+                            <i class="fas fa-envelope icon"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="accueil" class="hero-section">
+            <div class="girl-image-container">
+                <img src="pdp.png" alt="Photo de profil de Maëlys" class="girl-image">
+            </div>
+
+            <div class="notification-container">
+                <div class="message-notification">
+                    <div class="message-header">
+                        <div class="message-icon-box"></div>
+                        <span class="message-title">MESSAGES</span>
+                        <span class="message-time">maintenant</span>
+                    </div>
+                    <p class="message-content">
+                        À la recherche d'un stage du 7 avril au 11 juin 2026 dans le domaine du multimédia et de l'internet. (Avec possibilité de poursuivre en alternance en septembre 2026).
+                    </p>
+                </div>
+            </div>
+        </section>
+<div class="marquee">
+    <div class="marquee-content">
+         MOTION DESIGN  •  DEVELOPPEMENT WEB  •  COMMUNICATION  •  STAGE  •  ALTERNANCE  •  MONTAGE VIDEO  •  GRAPHISME  •  AUDIOVISUEL  •  PHOTOGRAPHIE  •  MOTION DESIGN  •  DEVELOPPEMENT WEB  •  COMMUNICATION  •  STAGE  •  ALTERNANCE  •  MONTAGE VIDEO  •  GRAPHISME  •  AUDIOVISUEL  •  PHOTOGRAPHIE  •  MOTION DESIGN  •  DEVELOPPEMENT WEB  •  COMMUNICATION  •  STAGE  •  ALTERNANCE  •  MONTAGE VIDEO  •  GRAPHISME  •  AUDIOVISUEL  •  PHOTOGRAPHIE  •
+    </div>
+</div>
+        <section id="projets">
+            <div class="filtres">
+            <h2>Projets</h2>
+            <div class="filtres">
+            <button data-filter="Tous" class="active">Tous</button>
+            <button data-filter="Création">Création</button>
+            <button data-filter="Développement">Développement</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openModal('projet1')">
+                    <div class="projet-item" data-category="Développement">
+                    <img src="marvel.png" alt="Logo marvel inventory" class="project-logo">
+                    <h3>Marvel Inventory</h3>
+                    <p>Projet scolaire de développement full stack.</p>
+                </div>
+            </div>
+                <div class="project-card" onclick="openModal('projet2')">
+                    <div class="projet-item" data-category="Développement">
+                    <img src="datafem.png" alt="Logo Datafem" class="project-logo">
+                    <h3>Dataviz </h3>
+                    <p>Projet scolaire de développement full stack.</p>
+                </div>
+                </div>
+                <div class="project-card" onclick="openModal('projet3')">
+                    <div class="projet-item" data-category="Création">
+                    <img src="logo_métrage.png" alt="Logo Le portail des saveurs" class="project-logo">
+                    <h3>Le portail des saveurs</h3>
+                    <p>Projet scolaire audiovisuel avec incrustation fond vert.</p>
+                </div>
+                </div>
+                <div class="project-card" onclick="openModal('projet4')">
+                    <div class="projet-item" data-category="Création">
+                    <img src="interview.png" alt="Logo interview" class="project-logo">
+                    <h3>Interview</h3>
+                    <p>Projet scolaire audiovisuel.</p>
+                </div>
+                </div>
+                <div class="project-card" onclick="openModal('projet5')">
+                    <div class="projet-item" data-category="Création">
+                    <img src="fleur.png" alt="Logo photo" class="project-logo">
+                    <h3>Photographie</h3>
+                    <p>Quelques clichés pris lors de mes voyages. </p>
+                </div>
+                </div>
+                <div class="project-card" onclick="openModal('projet6')">
+                <div class="projet-item" data-category="Développement">
+                <img src="logo_table.png" alt="Logo photo" class="project-logo">
+                    <h3>À table !</h3>
+                    <p>Projet scolaire de gestion de projet, UX/UI et développement full stack.</p>
+                </div>
+                </div>
+                <div class="project-card" onclick="openModal('projet7')">
+                <div class="projet-item" data-category="Création">
+                <img src="logo_nanterre.png" alt="Logo photo" class="project-logo">
+                    <h3>Nanterre Basketball</h3>
+                    <p>Projet de campagne de communication institutionnelle.</p>
+                </div>
+                </div>
+                <div class="project-card" onclick="openModal('projet8')">
+                <div class="projet-item" data-category="Création">
+                <img src="personal.jpg" alt="Logo photo" class="project-logo">
+                    <h3>Créations personnelles</h3>
+                    <p>Ensemble de projets personnelles.</p>
+                </div>
+                </div>
+                <div class="project-card" onclick="openModal('projet9')">
+                <div class="projet-item" data-category="Création">
+                <img src="logo_cdn.png" alt="Logo photo" class="project-logo">
+                    <h3>Clan du Néon</h3>
+                    <p>Projet de refonte de communication.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="qui-suis-je">
+            <h2>Qui suis-je ?</h2>
+            <div class="about-content">
+                <img src="pdp.jpg" alt="Photo de profil" class="profile-image">
+                <div class="about-text">
+                    <p>Mon moteur, c'est l'expression et la créativité, deux leviers essentiels pour donner une âme à mes réalisations et les faire résonner avec le public. Le numérique est devenu mon terrain de jeu, la meilleure façon de concrétiser mes idées et d'allier passion et efficacité. Mon parcours en MMI m'a apporté le cadre méthodologique nécessaire pour structurer mes projets, maîtriser les défis techniques et livrer des créations à la fois cohérentes et professionnelles. Je suis très enthousiaste à l'idée de réaliser un stage dans ce domaine pour continuer d'apprendre, repousser mes limites créatives et contribuer concrètement aux succès d'une entreprise.</p>
+                    <a href="CV_POHU_Maëlys.pdf" target="_blank" class="cv-button">
+                    Télécharger mon CV
+                    </a>
+                
+                </div>
+            </div>
+            
+            <h3 class="competences-title">Mes compétences techniques</h3>
+            <div class="competences-columns-wrapper"> 
+                
+                <div class="competences-column">
+                    <div class="competence-item">
+                        <img src="adobe.png" alt="Adobe Suite (Ps, Ai, Pr...)" class="competence-icon">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-skill-level="75"></div>
+                        </div>
+                        <span class="skin-label">Suite Adobe - Intermédiaire </span>
+                    </div>
+                    
+                    <div class="competence-item">
+                        <img src="dev.png" alt="HTML, CSS, JS, PHP, SQL" class="competence-icon">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-skill-level="45"></div>
+                        </div>
+                        <span class="skin-label">Développement Full Stack - Débutant</span>
+                    </div>
+                    
+                </div>
+
+                <div class="competences-column">
+                    
+                    <div class="competence-item">
+                        <img src="figma.png" alt="Figma Logo" class="competence-icon">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-skill-level="70"></div>
+                        </div>
+                        <span class="skin-label">UX/UI - Intermédiaire </span>
+                    </div>
+                    
+                    <div class="competence-item">
+                        <img src="wordpress.png" alt="WordPress Logo" class="competence-icon">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-skill-level="30"></div>
+                        </div>
+                        <span class="skin-label">CMS - Débutant</span>
+                    </div>
+                    
+                    <div class="competence-item">
+                        <img src="notion.png" alt="Notion Logo" class="competence-icon">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-skill-level="70"></div>
+                        </div>
+                        <span class="skin-label">Gestion de Projet - Intermédiaire </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    <section id="passions">
+    <h2>Mes passions</h2>
+    <p class="passion-intro-text">
+        Cliquez sur les cartes pour découvrir mes centres d'intérêt !
+    </p>
+    <div class="passions-grid">
+        
+        <div class="passion-box flip-card" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front featured">
+                    <i class="fas fa-question-circle icon-passion"></i>
+                </div>
+                <div class="flip-card-back">
+                    <video autoplay loop muted playsinline class="passion-video">
+                        <source src="voyage.mp4" type="video/mp4">
+                        </video>
+                    <div class="passion-text-overlay">
+                        <h4>Le voyage</h4>
+                        <p>Découvrir de nouvelles destinations et cultures me permet de trouver de l'inspiration et du réconfort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="passion-box flip-card" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front featured">
+                    <i class="fas fa-question-circle icon-passion"></i>
+                </div>
+                <div class="flip-card-back">
+                    <video autoplay loop muted playsinline class="passion-video">
+                        <source src="audiovisuel.mp4" type="video/mp4">
+                    </video>
+                    <div class="passion-text-overlay">
+                        <h4>L'audiovisuel</h4>
+                        <p>Regarder, produire ou monter tout types de contenus me fait vibrer, car cela stimule ma créativité.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="passion-box flip-card" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front featured">
+                    <i class="fas fa-question-circle icon-passion"></i>
+                </div>
+                <div class="flip-card-back">
+                    <video autoplay loop muted playsinline class="passion-video">
+                        <source src="musique.mp4" type="video/mp4">
+                    </video>
+                    <div class="passion-text-overlay">
+                        <h4>La musique</h4>
+                        <p>Elle est une source de motivation et me fait ressentir de fortes émotions. J'écoute tout genre de musique, je suis assez ouverte à ce sujet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="passion-box flip-card" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front featured">
+                    <i class="fas fa-question-circle icon-passion"></i>
+                </div>
+                <div class="flip-card-back" style="background-image: url('sport.jpeg');">
+                    <div class="passion-text-overlay">
+                        <h4>Le sport</h4>
+                        <p>Il me permet de gérer la pression et de me surpasser. J'apprécie particulièrement l'athlétisme, le ski, la danse et le rugby.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="passion-box flip-card" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front featured">
+                    <i class="fas fa-question-circle icon-passion"></i>
+                </div>
+                <div class="flip-card-back" style="background-image: url('lecture.png');">
+                    <div>
+                        <h4>La lecture</h4>
+                        <p>Elle me permet d'améliorer ma concentration, réduire mon stress et de déconnecter. Je lis des romans mais aussi des BD.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+        <section id="commentaire">
+            <h2>Mots de camarades</h2>
+            <div class="com-container">
+                <div class="com-scroll-wrapper">
+                    
+                    <div class="com-card">
+                        <p>"Ayant travaillé avec Maëlys sur plusieurs projets, elle est une personne pleine d'énergie et d'idées, toujours déterminée et prête à donner le meilleur de soi même dans les moments difficiles."</p>
+                        <h4>AZIZI Amal</h4>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                    <div class="com-card">
+                        <p>"Dans le contexte de l'interview que j'ai réalisé avec Maëlys, c'est une personne avec qui le travail est agréable à réaliser. Elle est réactive, ponctuelle et rigoureuse."</p>
+                        <h4>VIKTOROVITCH Romain</h4>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                    <div class="com-card">
+                        <p>"Avec Maëlys, j'ai pris beaucoup de plaisir à travailler dans des projets de développement web. Elle est toujours attentive, à l'écoute, et très ouverte aux propositions qu'on lui fait."</p>
+                        <h4>BENETEAU Lola</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="com-card">
+                        <p>"J'ai également travaillé avec Maëlys sur l'interview et je peux dire qu'elle est toujours de bonne humeur. Elle effectue toujours le travail demandé et est toujours très impliqué, une très belle rencontre."</p>
+                        <h4>KERNEIS Clément</h4>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                    <div class="com-card">
+                        <p>"Après un semestre de travail en groupe avec Maëlys sur plusieurs projets, j'ai remarqué qu'elle est très impliquée dans ses projets. Grâce à sa créativité et sa curiosité, elle sait toujours apporter des idées innovantes."</p>
+                        <h4> MAKAYA--MOUSSOKI Kelly </h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="com-card">
+                        <p>"Ayant travaillé avec Maëlys sur plusieurs projets, elle est une personne pleine d'énergie et d'idées, toujours déterminée et prête à donner le meilleur de soi même dans les moments difficiles."</p>
+                        <h4>AZIZI Amal</h4>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                    <div class="com-card">
+                        <p>" Dans le contexte de l'interview que j'ai réalisé avec Maëlys, c'est une personne avec qui le travail est agréable à réaliser. Elle est réactive, ponctuelle et rigoureuse."</p>
+                        <h4>VIKTOROVITCH Romain</h4>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                    <div class="com-card">
+                        <p>"Avec Maëlys, j'ai pris beaucoup de plaisir à travailler dans des projets de développement web. Elle est toujours attentive, à l'écoute, et très ouverte aux propositions qu'on lui fait."</p>
+                        <h4>BENETEAU Lola</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="com-card">
+                        <p>"J'ai également travaillé avec Maëlys sur l'interview et je peux dire qu'elle est toujours de bonne humeur. Elle effectue toujours le travail demandé et est toujours très impliqué, une très belle rencontre."</p>
+                        <h4>KERNEIS Clément</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="com-card">
+                        <p>"Après un semestre de travail en groupe avec Maëlys sur plusieurs projets, j'ai remarqué qu'elle est très impliquée dans ses projets. Grâce à sa créativité et sa curiosité, elle sait toujours apporter des idées innovantes."</p>
+                        <h4> MAKAYA--MOUSSOKI Kelly </h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+            </div>
+        </section>
+<div class="marquee">
+    <div class="marquee-content">
+         MOTION DESIGN  •  DEVELOPPEMENT WEB  •  COMMUNICATION  •  STAGE  •  ALTERNANCE  •  MONTAGE VIDEO  •  GRAPHISME  •  AUDIOVISUEL  •  PHOTOGRAPHIE  •  MOTION DESIGN  •  DEVELOPPEMENT WEB  •  COMMUNICATION  •  STAGE  •  ALTERNANCE  •  MONTAGE VIDEO  •  GRAPHISME  •  AUDIOVISUEL  •  PHOTOGRAPHIE  •  MOTION DESIGN  •  DEVELOPPEMENT WEB  •  COMMUNICATION  •  STAGE  •  ALTERNANCE  •  MONTAGE VIDEO  •  GRAPHISME  •  AUDIOVISUEL  •  PHOTOGRAPHIE  •  MOTION DESIGN  •  DEVELOPPEMENT WEB  •  COMMUNICATION  •  STAGE  •  ALTERNANCE  •  MONTAGE VIDEO  •  GRAPHISME  •  AUDIOVISUEL  •  PHOTOGRAPHIE  •
+    </div>
+</div>
+       <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-content">
+        <p>Si vous souhaitez obtenir des informations supplémentaires concernant ma recherche de stage ou d'alternance, vous pouvez me contacter par : </p>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <img src="mail.png" alt="Icône E-mail" class="contact-icon">
+                <p>mp.maelys19@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/ma%C3%ABlys-pohu-a4469a330/" target="_blank" class="contact-link">
+                    <img src="linkedin.png" alt="Icône LinkedIn" class="contact-icon">
+                </a>
+                <p> Maëlys POHU</p>
+            </div>
+            <div class="contact-item">
+                <img src="téléphone.png" alt="Icône Téléphone" class="contact-icon">
+                <p>07 67 01 70 40</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <h2 id="modalTitle">Titre du projet</h2>
+            </div>
+            <div class="modal-body">
+                <p id="modalDescription">Description détaillée du projet qui apparaîtra ici.</p>
+                <div id="photoGallery"></div>
+                <a href="#" class="project-link" id="modalLink">Entrez dans le projet</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
