@@ -66,6 +66,7 @@ function openModal(projectId) {
                 title: 'Créations personnelles',
                 description: 'Ces créations ont été réalisées dans un cadre personnel. Avec mes camarades, nous avons choisi de nous lancer des challenges créatifs sur une courte durée, dans une démarche libre et autonome. L’objectif était d’exprimer pleinement notre créativité, sans contraintes pédagogiques ni directives imposées, afin d’explorer nos idées, nos univers personnels et de produire des projets authentiques destinés à enrichir notre portfolio.',
                 photos: ['affiche_venom.png'],
+                videos: ['Intro.mp4']
             };
             break;
         case 'projet9':
@@ -111,6 +112,22 @@ function openModal(projectId) {
         });
         photoGallery.appendChild(thumbnailsContainer);
     }
+
+      if (projectData.videos && projectData.videos.length > 0) {
+    projectData.videos.forEach(videoSrc => {
+        const iframe = document.createElement('iframe');
+        iframe.src = videoSrc;
+        iframe.width = '100%';
+        iframe.height = '200';
+        iframe.style.borderRadius = '15px';
+        iframe.style.marginTop = '20px';
+        iframe.allow =
+            'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+
+        photoGallery.appendChild(iframe);
+    });
+}
 
     modal.classList.add('active');
 }
@@ -431,4 +448,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }, { threshold: 0.5 }); 
 
     observer.observe(title);
+
 });
