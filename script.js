@@ -42,7 +42,7 @@ function openModal(projectId) {
             projectData = {
                 title: 'Photographie',
                 description: 'Quelques clichés pris lors de mes voyages et balades.',
-                photos: ['vintage.jpeg', 'tenerife.jpeg', 'rue.png','portugal.jpeg', 'normandie.png', 'fleur.png','chateau.jpeg', 'IMG_3089.jpg', 'IMG_3090.jpg','IMG_3104.jpg','IMG_3106.jpg',] 
+                photos: ['vintage.jpeg', 'tenerife.jpeg','portugal.jpeg', 'normandie.png', 'fleur.png','chateau.jpeg', 'IMG_3089.jpg', 'IMG_3090.jpg','IMG_3104.jpg','IMG_3106.jpg',] 
                 
             };
             break;
